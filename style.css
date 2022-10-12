@@ -25,7 +25,7 @@ body{
 .container{
     padding: 1rem 2rem;
 }
-nav{
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ nav{
     font-family: 'Silkscreen', cursive;
     font-size: 2rem;
     font-weight: bold;
-}
+} 
 .logo span{
     color: #730082;
 }
@@ -50,7 +50,7 @@ nav{
     color: #fff;
 }
 
-.btn{
+/* .btn{
     border: none;
     padding: .8rem 2rem;
     background-color: #fff;
@@ -60,7 +60,7 @@ nav{
     color: #730082;
     border-radius: .5rem;
     
-}
+}  */
 .fa-solid , .fas{
     font-size: 2rem;
     display: none !important;
