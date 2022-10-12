@@ -50,7 +50,7 @@ body{
     color: #fff;
 }
 
-/* .btn{
+.btn{
     border: none;
     padding: .8rem 2rem;
     background-color: #fff;
@@ -60,7 +60,7 @@ body{
     color: #730082;
     border-radius: .5rem;
     
-}  */
+} 
 .fa-solid , .fas{
     font-size: 2rem;
     display: none !important;
