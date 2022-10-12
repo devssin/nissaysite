@@ -195,6 +195,35 @@ section .container h1{
 
 
 
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form label{
+    display: none;
+}
+.contact form input, .contact form textarea{
+    width: 50%;
+    padding: .8rem ;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 1rem;
+    border-radius: .5rem;
+    color: #fff ;
+    font-size: 1.1rem !important;
+}
+.submit{
+    background-color: #fff !important;
+    color: #730082 !important;
+
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    outline: none;
+}
+
+
 
 
 
@@ -210,7 +239,11 @@ section .container h1{
 }
 
 @media only screen and (max-width: 768px){
-    
+    .circle{
+        max-width: 100%;
+        top: 0px;
+        left: 0%;
+    }
     .logo{
         font-size: 1.5rem;
     }
@@ -219,7 +252,7 @@ section .container h1{
         text-align: center;
         background-color: #fff;
         height: 100vh;
-        min-width: 50vw;
+        min-width: 70vw;
         
         position: absolute;
         top: 0;
@@ -271,5 +304,8 @@ section .container h1{
     }
     .left img{
         width: 300px;
+    }
+    .contact form input, .contact form textarea{
+        width: 90%;
     }
 }
