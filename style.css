@@ -8,7 +8,6 @@
 body{
     background: linear-gradient(143deg, #020024 0%, #730082 100%) no-repeat;
     background-size: cover;
-    min-height: 100vh;
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden !important;
@@ -67,6 +66,7 @@ body{
 }
 main{
     margin-top: 3rem;
+    min-height: 80vh;
 }
 .hero{
     display: flex;
@@ -124,7 +124,7 @@ section{
     margin-top: 3rem;
 }
 
-section .container h1{
+section  h1{
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
@@ -224,6 +224,31 @@ section .container h1{
 }
 
 
+footer{
+    margin-top: 4rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Silkscreen';
+}
+footer h6 span{
+    color: #730082;
+}
+footer h6 , footer p, footer div{
+    flex: 1;
+    text-align: center;
+}
+.social a i{
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 1rem;
+}
 
 
 

@@ -21,23 +21,22 @@
       alt="circle"
       class="circle"
     />
-    <header>
-      <div class="container">
+    <div class="container">
+      <header>
         <nav>
           <h1 class="logo">Nissay<span>Code</span></h1>
           <i class="fa-solid fa-bars burger"></i>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li>
-              <a href="#"><button class="btn">Send Message</button></a>
+              <a href="#contact"><button class="btn">Send Message</button></a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
+      </header>
+      <main>
         <div class="hero">
           <div class="description">
             <h1>Hello ! I'm AAYNE ALHAYATE Yassine</h1>
@@ -49,7 +48,10 @@
               nemo impedit officiis ullam!
             </p>
             <div class="ctas">
-              <a href="https://github.com/devssin" target="_blank"><button class="cta-sec">Visit Github  <i class="fa-brands fa-github"></i></button></a>
+              <a href="https://github.com/devssin" target="_blank"
+                ><button class="cta-sec">
+                  Visit Github <i class="fa-brands fa-github"></i></button
+              ></a>
               <button class="cta-main">Contact Me</button>
             </div>
           </div>
@@ -57,11 +59,9 @@
             <img src="./assets/undraw_firmware_re_fgdy.svg" alt="hero image" />
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <section>
-      <div class="container">
+      <section id="about">
         <h1>About Me</h1>
         <div class="about">
           <div class="left">
@@ -82,11 +82,9 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="container">
+      <section id="services">
         <h1>My services</h1>
         <div class="services">
           <div class="service">
@@ -117,45 +115,57 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-        <div class="container">
-            <h1>Contact Me</h1>
-            <div class="contact">
-                <form action="">
-                    <label for="nome">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your name">
-                    <label for="nome">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                    <label for="nome">Subject</label>
-                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Subject"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-            </div>
+      </section>
+      <sectionn id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact">
+          <form action="">
+            <label for="nome">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your name"
+            />
+            <label for="nome">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+            <label for="nome">Subject</label>
+            <textarea
+              name="subject"
+              id="subject"
+              cols="30"
+              rows="10"
+              placeholder="Subject"
+            ></textarea>
+            <input type="submit" value="Send Message" class="submit" />
+          </form>
         </div>
-    </section>
+      </section>
 
+      <footer>
+        <h6>Nissay<span>Code</span></h6>
+        <p>2022 &copy;Copyright</p>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="social">
+          <a href="https://www.linkedin.com/in/yassine-aaynealhayate-589838210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/devssin" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/nissay.js/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
 
     <script>
-        const links = document.querySelector(".nav-links");
-        const burger = document.querySelector(".burger");
+      const links = document.querySelector(".nav-links");
+      const burger = document.querySelector(".burger");
 
-        burger.addEventListener('click' , () => {
-            links.classList.toggle('show');
-        })
+      burger.addEventListener("click", () => {
+        links.classList.toggle("show");
+      });
     </script>
   </body>
 </html>
